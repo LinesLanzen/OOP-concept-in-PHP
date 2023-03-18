@@ -83,12 +83,18 @@ class ChildClass extends ParentClass {
 // instantiate objects
 $obj1 = new ParentClass("hello", 123, true);
 $obj2 = new ChildClass("world", 456, false, "new");
+$obj3 = new ChildClass("example", 789, true, "object");
 
 // display object info
-echo "<h3>Parent Object:</h3>";
+echo "<h3>Object 1:</h3>";
 $obj1->displayInfo();
-echo "<h3>Child Object:</h3>";
+
+echo "<h3>Object 2:</h3>";
 $obj2->printInfo("hello");
+
+echo "<h3>Object 3:</h3>";
+$obj3->displayInfo();
+
 
 
 	?>
